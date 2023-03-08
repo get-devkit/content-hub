@@ -7,7 +7,7 @@ import { parsePageId, uuidToId } from "notion-utils";
 // include UUIDs in page URLs during local development but not in production
 // (they're nice for debugging and speed up local dev)
 const uuid = !!includeNotionIdInUrls;
-const basePath = "/content-hub";
+const basePath = "/c";
 
 export const mapPageUrl =
   (site: Site, recordMap: ExtendedRecordMap, searchParams: URLSearchParams) =>

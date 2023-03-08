@@ -19,5 +19,5 @@ module.exports = withBundleAnalyzer({
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
-  basePath: "/content-hub",
+  basePath: "/c",
 });
