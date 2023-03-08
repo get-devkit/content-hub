@@ -1,10 +1,10 @@
 import { siteConfig } from "./lib/site-config";
 
-const name = "NCR Developers Club";
+const name = "DevKit";
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: "632b9fa4094e4549aab347e90e42edf6",
+  rootNotionPageId: "86d647d4706042f8a3e4de95377b2748",
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
@@ -19,12 +19,12 @@ export default siteConfig({
   description: name,
 
   // social usernames (optional)
-  twitter: "itsharshag",
-  github: "itsharshag",
-  linkedin: "itsharshag",
+  twitter: "getdevkit",
+  github: "getdevkit",
+  linkedin: "getdevkit",
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
-  // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  youtube: "@getdevkit", // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults

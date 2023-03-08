@@ -8,15 +8,34 @@ export default class MyDocument extends Document {
       <IconContext.Provider value={{ style: { verticalAlign: "middle" } }}>
         <Html lang="en">
           <Head>
-            <link rel="shortcut icon" href="/favicon.ico" />
-            <link
-              rel="icon"
-              type="image/png"
-              sizes="32x32"
-              href="favicon.png"
-            />
+            <link rel="shortcut icon" href="/logo.png" />
+            <link rel="icon" type="image/png" sizes="32x32" href="logo.png" />
 
             <link rel="manifest" href="/manifest.json" />
+
+            {process?.env?.NODE_ENV == "production" && (
+              <>
+                <script
+                  src="https://accounts.google.com/gsi/client"
+                  async
+                  defer
+                />
+                <script
+                  async
+                  src="https://www.googletagmanager.com/gtag/js?id=G-X2CCJNFX9Y"
+                />
+                <script
+                  dangerouslySetInnerHTML={{
+                    __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-X2CCJNFX9Y');
+            `,
+                  }}
+                />
+              </>
+            )}
           </Head>
 
           <body>
